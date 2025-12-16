@@ -2,8 +2,6 @@
 
 ## Automated Workflow & Testing Setup
 
----
-
 ### Contents:
 
 <details>
