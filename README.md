@@ -374,16 +374,16 @@ npm run prepare          # Install Husky Git hooks (runs automatically after npm
 - [x] Unit tests written for `isActivePath` function (4 test cases)
 - [x] Unit tests written for `getUsername` function (2 test cases)
 - [x] Playwright installed and configured
-- [ ] E2E tests written for login functionality (2 test cases)
-- [ ] E2E tests written for navigation (1 test case)
+- [x] E2E tests written for login functionality (2 test cases)
+- [x] E2E tests written for navigation (1 test case)
 
 ### Documentation:
 
 - [x] README updated with installation instructions
 - [x] README includes all npm scripts
 - [x] README includes environment variable requirements
-- [ ] `.env` added to `.gitignore`
-- [ ] `.env.example` file created
+- [x] `.env` added to `.gitignore`
+- [x] `.env.example` file created
 
 ### Repository:
 
