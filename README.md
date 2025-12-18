@@ -137,8 +137,8 @@ npx playwright install
 ├── venue/             # Venue details page
 ├── index.html         # Home page
 ├── tests/             # End-to-end tests
-│   ├── login.test.js
-│   └── navigation.test.js
+│   ├── auth.spec.js
+│   └── nav.spec.js
 ├── package.json       # Project dependencies
 ├── eslint.config.mjs  # ESLint configuration
 ├── vitest.config.js   # Vitest configuration
@@ -197,19 +197,19 @@ End-to-end tests use **Playwright** to test user workflows in a real browser.
 **Run e2e tests:**
 
 ```bash
-npm run test:e2e
+npx playwright test
 ```
 
 **Run e2e tests in UI mode:**
 
 ```bash
-npm run test:e2e:ui
+npx playwright test --ui
 ```
 
 **Test Files:**
 
-- `tests/login.test.js`
-- `tests/navigation.test.js`
+- `tests/auth.spec.js`
+- `tests/nav.spec.js`
 
 **Test Cases:**
 
@@ -227,7 +227,6 @@ npm run test:e2e:ui
 
 **Configuration:**
 Playwright is configured to run tests in Chromium, Firefox, and WebKit browsers.
-I suggest Vivaldi, on the basis of "I like it it's cool".
 
 ---
 
@@ -240,8 +239,8 @@ This project requires environment variables for end-to-end testing.
 Create a `.env` file in the project root with the following variables:
 
 ```
-TEST_EMAIL=your-test-email@example.com
-TEST_PASSWORD=your-test-password
+TEST_USER_EMAIL=your-test-email@example.com
+TEST_USER_PASSWORD=your-test-password
 ```
 
 **Setup:**
@@ -308,8 +307,8 @@ Prettier is configured with standard defaults in `.prettierrc` and runs automati
 3. **Run tests:**
 
    ```bash
-   npm test           # Unit tests
-   npm run test:e2e   # E2E tests
+   npm test              # Unit tests
+   npx playwright test   # E2E tests
    ```
 
 4. **Commit changes:**
@@ -347,8 +346,8 @@ npm run dev              # Start Tailwind CSS in watch mode
 
 # Testing
 npm test                 # Run unit tests (Vitest)
-npm run test:e2e         # Run end-to-end tests (Playwright)
-npm run test:e2e:ui      # Run e2e tests in UI mode
+npx playwright test      # Run end-to-end tests (Playwright)
+npx playwright test --ui # Run e2e tests in UI mode
 
 # Setup
 npm run prepare          # Install Husky Git hooks (runs automatically after npm install)
@@ -358,13 +357,13 @@ npm run prepare          # Install Husky Git hooks (runs automatically after npm
 
 - **`dev`** - Watches `css/input.css` and rebuilds `css/style.css` on changes
 - **`test`** - Runs Vitest unit test suite
-- **`test:e2e`** - Runs Playwright e2e tests in headless mode
-- **`test:e2e:ui`** - Opens Playwright test UI for debugging tests
+- **`npx playwright test`** - Runs Playwright e2e tests in headless mode
+- **`npx playwright test --ui`** - Opens Playwright test UI for debugging tests
 - **`prepare`** - Installs Husky Git hooks (runs automatically after installation)
 
 ---
 
-## 10. Assignment Checklist
+## 10. Assignment Checklist (mostly for me)
 
 ### Development Tools:
 
