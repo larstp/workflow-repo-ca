@@ -1,0 +1,13 @@
+# Ignore all these ones 
+node_modules
+dist
+build
+.cache
+
+# Ignore test results
+test-results
+playwright-report
+coverage
+
+# Ignore config files
+package-lock.json

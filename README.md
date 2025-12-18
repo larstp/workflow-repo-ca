@@ -287,6 +287,10 @@ The pre-commit hook runs automatically before each commit:
 - Automatically formats code before committing
 - Prevents commits with linting errors
 
+### Prettier Configuration
+
+Prettier is configured with standard defaults in `.prettierrc` and runs automatically on staged files before commit.
+
 ---
 
 ## 8. Development Workflow
