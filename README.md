@@ -390,8 +390,8 @@ npm run prepare          # Install Husky Git hooks (runs automatically after npm
 
 ### Repository:
 
-- [ ] Pull Request opened from `workflow` branch
-- [ ] PR link submitted for review
+- [x] Pull Request opened from `workflow` branch
+- [x] PR link submitted for review
 
 ---
 
